@@ -1,0 +1,105 @@
+/********* Base Style ************/
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 35px;
+ 
+}
+
+body {
+
+  margin: 15px;
+}
+
+.container {
+  position: relative;
+  background-color: lightgray;
+  border: 1px solid black;
+  width: 100%;
+  height: 220px;
+  padding: 10px;
+  padding-top: 25px;
+  font-size: 20px;
+  font-family: Helvetica;
+
+} 
+
+h2 {
+  border: 1px solid black;
+  border-right: 0;
+  border-top: 0;
+  width: 120px;
+  text-align: center; 
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: 0;
+
+}
+
+#Chick-label {
+  background-color: violet;
+    
+}
+
+#Beef-label {
+  background-color: lightblue;
+   
+}
+
+#Sush-label {
+  background-color: pink;
+  
+ 
+}
+
+/* Simple Responsive Framework. */
+
+.row {
+  width: 100%
+}
+
+/*******For desktop********/
+@media (min-width: 992px) {
+
+  div.box1, div.box2, div.box3 {
+    float: left;
+    padding: 10px;
+    width: 33.33%
+
+  }
+  
+}
+
+/*******For Tablet******/
+@media (min-width: 768px) and (max-width: 991px) {
+
+  div.box1, div.box2, div.box3 {
+    float: left;
+    padding: 10px;
+    width: 50%;
+  }
+
+  div.box3 {
+    float: left;
+    padding: 10px;
+    width: 100%;
+
+  }
+
+}
+
+/******For Mobile***********/
+@media (max-width: 767px) {
+
+   div.box1, div.box2, div.box3 {
+    float: left;
+    padding: 10px;
+    width: 100%;
+    }
+ 
+}
